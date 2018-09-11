@@ -1,0 +1,10 @@
+1 Open project in Xcode
+
+2 copy podfile and paste in Xcode project
+
+3 open terminal and run command cd “path of folder” like cd “/Users/asad/Desktop/unity”
+ Or write cd and drag folder in terminal 
+
+4 run command pod install
+
+5 after install pod open Unity-iPhone.xcworkspace file

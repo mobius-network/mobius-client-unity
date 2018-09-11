@@ -1,0 +1,11 @@
+framework module Mobius_Uinty_iOS_Plugin {
+  umbrella header "Mobius_Uinty_iOS_Plugin.h"
+
+  export *
+  module * { export * }
+}
+
+module Mobius_Uinty_iOS_Plugin.Swift {
+    header "Mobius_Uinty_iOS_Plugin-Swift.h"
+    requires objc
+}
