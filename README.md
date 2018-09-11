@@ -80,7 +80,7 @@ After the user completes the authentication process they have a secret key.
 ```Unity
 MobiusUnity.SendPayment(string publicKey , string secretKey , string amount , string status);
 
-i.e status = "true" for public Testnet
+i.e status = "true" for live account
     status = "false" for test account
     
 This function will return JSON string like this and you can parse it according to your requirement
@@ -106,7 +106,7 @@ if there is some sort of error
 ```Unity
 MobiusUnity.getBalance(string secretKey , string status);
 
-i.e status = "true" for public Testnet
+i.e status = "true" for live account
     status = "false" for test account
     
     
