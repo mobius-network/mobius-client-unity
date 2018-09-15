@@ -36,7 +36,6 @@ public class GameButtonHandler : MonoBehaviour {
 				PlayerPrefs.SetString ("CB" , mobius_unity_object.balance);
 				gameOverPanel.SetActive(false);
 				SceneManager.LoadScene (1);
-				Debug.Log ("Payment Successfully Done ");
 			} else {
 				error_text.text = mobius_unity_object.error;
 				_errorPanel.SetActive(true);

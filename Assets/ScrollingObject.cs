@@ -17,9 +17,12 @@ public class ScrollingObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameController.Instance.isGameOver)
-        {
-            rb2d.velocity = Vector2.zero;
-        }
+		if (GameController.Instance.isGameOver) {
+			rb2d.velocity = Vector2.zero;
+		} else if (!Bird.isGameStart) {
+			rb2d.velocity = Vector2.zero;
+		} else if (Bird.isGameStart) {
+			rb2d.velocity = new Vector2(GameController.Instance.scrollSpeed, 0);
+		}
     }
 }
